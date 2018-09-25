@@ -2,12 +2,24 @@
 <head>
     <title>Achademics</title>
     <link rel="stylesheet" href="../CSS/index.css">
-</head>
-<body>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        var add = function (s) {
+            document.getElementById(s).classList.add("active");
+        }
+        var remove = function (s) {
+            document.getElementById(s).classList.toggle("active");
+        }
+    </script>
+
+    </head>
+<body style="background-color: #1e3d55">
 <div id="containerDiv" style="height: 100%;">
     <div id="modalsDiv" style="height: 70%;">
-        <div class="wrapper" style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
-            <div class="button" onclick="document.body.classList.add('active')">
+        <div id="wrapper1" class="wrapper"
+             style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
+            <div id="btn" class="button" onclick="add('wrapper1');">
                 <span class="button-text">CSE</span>
                 <div class="button-backgrounds">
                     <div class="button-circle button-circle1"></div>
@@ -16,29 +28,30 @@
                     <div class="button-circle button-circle4"></div>
                 </div>
             </div>
-            <div class="popup">
-                <div class="popup-inside">
+            <div id="popup" class="popup">
+                <div id="popup-inside" class="popup-inside">
                     <div class="backgrounds">
-                        <div class="background"></div>
-                        <div class="background background2"></div>
-                        <div class="background background3"></div>
-                        <div class="background background4"></div>
-                        <div class="background background5"></div>
-                        <div class="background background6"></div>
+                        <div id="background"class="background"></div>
+                        <div id="background2"class="background background2"></div>
+                        <div id="background3" class="background background3"></div>
+                        <div id="background4" class="background background4"></div>
+                        <div id="background5" class="background background5"></div>
+                        <div id="background6" class="background background6"></div>
                     </div>
                 </div>
-                <div class="content">
+                <div id="content" class="content">
                     <div class="content-wrapper">
-                        <h1>well done</h1>
-                        <p>Do you like it?</p>
-                        <p class="try-again" onclick="document.body.classList.remove('active')">Back</p>
+                        <h1>Computer Science Engineering</h1>
+                        <p>The department of Computer Science Engineering attracts the best students across the country. It offers broad under graduate curriculum based on application and theoretical foundation of computers with the vision to provide excellence and relevance in teaching. It offers intensive exposure to latest technologies including E-commerce, multimedia, data mining, advance computer architecture etc.</p>
+                        <p class="try-again" onclick="remove('wrapper1');">Back</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="wrapper" style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
-            <div class="button" onclick="document.body.classList.add('active')">
+        <div id="wrapper2" class="wrapper"
+             style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
+            <div class="button" onclick="add('wrapper2');">
                 <span class="button-text">ECE</span>
                 <div class="button-backgrounds">
                     <div class="button-circle button-circle1"></div>
@@ -60,16 +73,17 @@
                 </div>
                 <div class="content">
                     <div class="content-wrapper">
-                        <h1>well done</h1>
-                        <p>Do you like it?</p>
-                        <p class="try-again" onclick="document.body.classList.remove('active')">Back</p>
+                        <h1>Electronics & Communication Engineering</h1>
+                        <p>Since its inception in 2007, the objective of the department has been to become the front-runner in its core area of specialization. With a vision to excel in education and research, the department has taken the lead in the establishment of well equipped, comprehensive and exemplary laboratories. Upgradation of laboratories is done from time to time to keep track with the rapid changes in technology.</p>
+                        <p class="try-again" onclick="remove('wrapper2')">Back</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="wrapper" style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
-            <div class="button" onclick="document.body.classList.add('active')">
+        <div id="wrapper3" class="wrapper"
+             style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
+            <div class="button" onclick="add('wrapper3');">
                 <span class="button-text">MAE</span>
                 <div class="button-backgrounds">
                     <div class="button-circle button-circle1"></div>
@@ -91,16 +105,17 @@
                 </div>
                 <div class="content">
                     <div class="content-wrapper">
-                        <h1>well done</h1>
-                        <p>Do you like it?</p>
-                        <p class="try-again" onclick="document.body.classList.remove('active')">Back</p>
+                        <h1>Mechincal And Automation Engineering</h1>
+                        <p>The department of MAE was established in 2007 with a vision to foster quality technical education in meeting the growing demand for technical man power in the industrial sector. The department offers (B.Tech.) program in MAE. The presence of experienced and highly talented faculty has helped to establish a high reputation for the department in the academia and industry.</p>
+                        <p class="try-again" onclick="remove('wrapper3');">Back</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="wrapper" style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
-            <div class="button" onclick="document.body.classList.add('active')">
+        <div id="wrapper4" class="wrapper"
+             style="width: 24%;height: 70%;display: inline-block;/* margin-left: 1vw; *//* margin-right: 1vw; */vertical-align: top;">
+            <div class="button" onclick="add('wrapper4');">
                 <span class="button-text">HAS</span>
                 <div class="button-backgrounds">
                     <div class="button-circle button-circle1"></div>
@@ -122,9 +137,10 @@
                 </div>
                 <div class="content">
                     <div class="content-wrapper">
-                        <h1>well done</h1>
-                        <p>Do you like it?</p>
-                        <p class="try-again" onclick="document.body.classList.remove('active')">Back</p>
+                        <h1>Humanities and Applied Sciences</h1>
+                        <p>Sciences(HAS)
+                            The department of HAS is one of the key departments in the Institution as it grooms the students in their first year of study. The department comprises of faculty from four streams including Chemistry, Physics, Mathematics and communication skills. The department comprises of highly qualified faculty members and technical staff and well equipped laboratories with advanced instruments.</p>
+                        <p class="try-again" onclick="remove('wrapper4');">Back</p>
                     </div>
                 </div>
             </div>
@@ -132,5 +148,6 @@
 
     </div>
 </div>
+
 </body>
 </html>

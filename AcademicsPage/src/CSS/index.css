@@ -74,7 +74,7 @@ p:last-of-type{
     cursor: pointer;
     position: relative;
     -webkit-appearance: none;
-    background: none;
+    background: #ffca00;
     outline: none;
     border: none;
     text-transform: uppercase;
@@ -162,7 +162,7 @@ p:last-of-type{
     margin-top: 2px;
     visibility: hidden;
     height: 400px;
-    width: 380px;
+    width: 410px;
     flex-shrink: 0;
     border-radius: 3px;
     position: relative;
@@ -170,7 +170,7 @@ p:last-of-type{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease
+    transition: all 0.2s ease;
 }
 
 .popup-inside{
@@ -271,6 +271,7 @@ p:last-of-type{
 
 .content{
     --offset: 0;
+    background-color: #298b93;
     position: absolute;
     left: var(--offset);
     right: var(--offset);
@@ -286,27 +287,29 @@ p:last-of-type{
 
 .content-wrapper{
     text-align: center;
+    font-size: 15px;
+    color: white;
 }
 
-body.active .content{
+.active .content{
     opacity: 1;
     transform: none;
 }
 
-body.active .popup{
+.active .popup{
     opacity: 1;
     visibility: visible;
 }
 
-body.active .popup-inside{
+.active .popup-inside{
     border-radius: 0;
     box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
 }
 
-body.active .background{
+.active .background{
     transform: scale(1);
 }
 
-body.active .background6{
+.active .background6{
     transform: scale(8);
 }
